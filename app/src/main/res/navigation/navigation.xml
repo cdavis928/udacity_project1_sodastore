@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginDestination">
+
+    <fragment
+        android:id="@+id/loginDestination"
+        android:name="com.udacity.sodastore.ui.login.LoginDestination"
+        android:label="fragment_login_destination"
+        tools:layout="@layout/fragment_login_destination">
+        <action
+            android:id="@+id/action_loginDestination_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:popUpTo="@id/navigation" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.udacity.sodastore.fragments.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_instructionsFragment"
+            app:destination="@id/instructionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/instructionsFragment"
+        android:name="com.udacity.sodastore.fragments.InstructionsFragment"
+        android:label="fragment_instructions"
+        tools:layout="@layout/fragment_instructions">
+        <action
+            android:id="@+id/action_instructionsFragment_to_sodaListFragment"
+            app:destination="@id/sodaListFragment"
+            app:popUpTo="@id/navigation" />
+    </fragment>
+    <fragment
+        android:id="@+id/sodaListFragment"
+        android:name="com.udacity.sodastore.fragments.SodaListFragment"
+        android:label="soda_list_fragment"
+        tools:layout="@layout/soda_list_fragment">
+        <action
+            android:id="@+id/action_sodaListFragment_to_sodaDetailFragment"
+            app:destination="@id/sodaDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sodaDetailFragment"
+        android:name="com.udacity.sodastore.fragments.SodaDetailFragment"
+        android:label="fragment_soda_detail"
+        tools:layout="@layout/fragment_soda_detail">
+        <action
+            android:id="@+id/action_sodaDetailFragment_to_sodaListFragment"
+            app:destination="@id/sodaListFragment" />
+    </fragment>
+</navigation>

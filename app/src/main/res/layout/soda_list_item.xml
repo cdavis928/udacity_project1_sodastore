@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sodaList"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/soda_name_list_item"
+        style="@style/SodaTitleListHeadlines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soda Name" />
+
+    <TextView
+        android:id="@+id/soda_company_list_item"
+        style="@style/SodaListItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coca Cola" />
+
+    <TextView
+        android:id="@+id/soda_flavor_list_item"
+        style="@style/SodaListItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grape" />
+
+    <TextView
+        android:id="@+id/soda_description_list_item"
+        style="@style/SodaListItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soda Description" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="?android:attr/listDivider" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="sodaDetailFragment"
+            type="com.udacity.sodastore.fragments.SodaDetailFragment" />
+
+        <variable
+            name="sodaObject"
+            type="com.udacity.sodastore.models.Soda" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/frameLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        tools:context=".fragments.SodaDetailFragment">
+
+        <TextView
+            android:id="@+id/soda_name_text_view"
+            style="@style/TextHeadlines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/soda_name" />
+
+        <EditText
+            android:id="@+id/soda_name_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@={sodaObject.name}" />
+
+
+        <TextView
+            android:id="@+id/soda_company_text_view"
+            style="@style/TextHeadlines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/soda_company" />
+
+        <EditText
+            android:id="@+id/company_name_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@={sodaObject.company}" />
+
+        <TextView
+            android:id="@+id/soda_flavor_text_view"
+            style="@style/TextHeadlines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/soda_flavor" />
+
+        <EditText
+            android:id="@+id/soda_flavor_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@={sodaObject.flavor}" />
+
+        <TextView
+            android:id="@+id/soda_description_text_view"
+            style="@style/TextHeadlines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soda Description" />
+
+        <EditText
+            android:id="@+id/soda_description_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:maxLines="5"
+            android:minLines="1"
+            android:text="@={sodaObject.description}" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/cancel_button_text" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="save" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

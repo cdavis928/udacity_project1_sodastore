@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">SodaStore</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_register">Register new account</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <!-- Strings related to the Welcome screen -->
+    <string name="welcome_title_text">Welcome to the Soda App!</string>
+    <string name="welcome_description">It\'s your first day on the job of adding sodas to the inventory. Lucky you! You\'re going to have a lot of fun. Click the instructions button to get started.</string>
+    <string name="action_navigate_instructions">Instructions</string>
+
+    <!-- Strings to use in the Instructions screen -->
+    <string name="instructions_title_text">Instructions</string>
+    <string name="instructions_description_text">On the next page, you\'ll be presented with an empty list. It\'s your job to fill it up! Tap the green "add" button, fill in the details of your soda, and then click the Save button to add it to your list.</string>
+
+    <!-- Strings we will encounter in the Soda List fragment -->
+    <string name="soda_name">Soda name</string>
+    <string name="soda_company">Company</string>
+    <string name="soda_flavor">Flavor</string>
+    <string name="soda_description">Description</string>
+    <string name="save_soda_button">Save</string>
+    <string name="cancel_button_text">Cancel</string>
+
+    <!-- Overflow Menu labels -->
+    <string name="overflow_logout_string">Log Out</string>
+</resources>
